@@ -1,0 +1,15 @@
+/*styling the nav element with a horizontal menu*/
+.navigation ul {
+    margin: 0;
+    padding: 3rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+
+  .navigation ul a {
+    display: block;
+    padding: .5rem 1rem;
+    color: goldenrod;
+  }
+

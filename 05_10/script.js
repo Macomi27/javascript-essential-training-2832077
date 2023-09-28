@@ -60,3 +60,29 @@ newArticle.setAttribute("id", "everyday");
 newArticle.innerHTML = content;
 
 main.append(newArticle);
+
+//Creating a template literal for nav menu and adding 5 list items
+const navMenuContent = `
+
+  <li><a href="#">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Courses</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">Message</a></li>
+
+`;
+//creating a new element, nav, with class name "navigation"(which will be used to style the element)
+const nav_menu = document.createElement("nav");
+nav_menu.classList.add("navigation")
+//creating new element "ul"
+const newnav = document.createElement("ul")
+//injecting the template literal to the html document
+newnav.innerHTML = navMenuContent
+//appending the injected template literal to the nav element
+nav_menu.append(newnav);
+
+//appending the nav element to the siteheader(header of the document)
+document.querySelector(".siteheader").append(nav_menu)
+
+
+
