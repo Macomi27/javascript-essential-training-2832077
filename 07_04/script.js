@@ -10,19 +10,19 @@
 
 // 1
 Academics = ["book", "pen", "table", "chair", "eraser", "chalk", "blackboard", "pencil"]
-console.log(Academics);
+console.log("Academics array: ", Academics);
 
 //2
 Academics.pop()
-console.log(Academics);
+console.log("Removing the last item in the array: ",Academics);
 
 //3
 Academics.unshift("pencil")
-console.log(Academics);
+console.log("Placing the last element as first in the array: ", Academics);
 
 //4
 Academics.sort()
-console.log(Academics);
+console.log("Sorted array: ",Academics);
 
 //5
 let Search = Academics.find(function (item) {
@@ -33,5 +33,5 @@ let Search = Academics.find(function (item) {
 console.log("Academics item length greater than or equal to six: ", Search)
 
 //6
-Academics.shift(Search)
-console.log(Academics)
+Academics.splice(Academics[2], 1);
+console.log("Array without item at index 2: ", Academics);
